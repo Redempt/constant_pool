@@ -14,7 +14,7 @@ struct Color(&'static str, u8, u8, u8);
 
 ```rs
 struct Team {
-	name: &'static str,
+  name: &'static str,
   number: u8
 }
 ```
@@ -23,7 +23,7 @@ Once your struct is defined, you can define the constant pool using the `constan
 
 ```rs
 constant_pool! {
-	pub Colors: Color {
+  pub Colors: Color {
     RED(255, 0, 0),
     BLUE(0, 0, 255),
     GREEN(0, 255, 0),
@@ -35,7 +35,7 @@ constant_pool! {
 ```rs
 constant_pool! {
   pub Teams: Team {
-  	WHITE{number: 1},
+    WHITE{number: 1},
     BLACK{number: 2},
     ORANGE{number: 3}
   }
